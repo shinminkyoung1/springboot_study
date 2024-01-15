@@ -2,22 +2,21 @@
 
 <table class="table">
     <thead>
-    {{#article}}
     <tr>
-        <th scope="col">{{id}}</th>
-        <th scope="col">{{title}}</th>
-        <th scope="col">{{content}}</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Content</th>
     </tr>
     </thead>
-    <>
+    {{#article}}
     <tr>
-        <th scope="row">1</th>
-        <td colspan="2">제목1111</td>
-        <td>내용1111</td>
+        <th>{{id}}</th>
+        <td>{{title}}</td>
+        <td>{{content}}</td>
     </tr>
     {{/article}}
-    </tbody>
 </table>
+
+<a href="/articles">Go to Article List</a>
 
 {{>layouts/footer}}
