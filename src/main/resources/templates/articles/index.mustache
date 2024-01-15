@@ -1,0 +1,25 @@
+{{>layouts/header}}
+
+<table class="table">
+<thead>
+    {{#articleList}}
+    <tr>
+        <th scope="col">{{id}}</th>
+        <th scope="col">{{title}}</th>
+        <th scope="col">{{content}}</th>
+        <th scope="col">Handle</th>
+    </tr>
+    </thead>
+        <>
+        <tr>
+            <th scope="row">1</th>
+            <td colspan="2">제목1111</td>
+            <td>내용1111</td>
+        </tr>
+    {{/articleList}}
+    </tbody>
+</table>
+
+<a href="/articles/new">New Article</a>
+
+{{>layouts/footer}}
